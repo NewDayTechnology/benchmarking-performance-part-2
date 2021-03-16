@@ -1,17 +1,44 @@
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+# Measuring performance with BenchmarkDotNet part 2
 
-# Your project Title (A Title Image too if possible)
 
-# Description
-Describe by words and images alike
+![Build](https://github.com/NewDayTechnology/benchmarking-performance-part-2/actions/workflows/dotnet.yml/badge.svg)
 
-# Demo 
-Inlcude images, video links, live Demo links
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](CODE_OF_CONDUCT.md)
 
-# Technologies used
+A simple demonstration of the superlative [BenchmarkDotNet](https://benchmarkdotnet.org/index.html) and its integration into Github Actions.
 
-# Technical description - such as, but not limitied to
-## Installation
-## Setup etc.
+Measuring code performance is self evidently a vital discipline to software engineering and yet is so often skipped, usually for false economies. [BenchmarkDotNet](https://benchmarkdotnet.org/index.html) makes this essential task simplicity itself, with a syntax and style that's immediately intuitive to anyone versed in unit testing.
 
-# How to contribute?
+Just exercise your code in a declarative way, include it in your CI pipeline, and enjoy the results.
+
+This project just demonstrates the basics: the .net project, the CI pipeline and the resultant reports.
+
+## The Benchmarks
+
+* ``NoopTest``
+The absolute minimum function that can be benchmarked - it does nothing.
+
+* ``AddTest``
+A simple addition metric, again of minimal complexity.
+
+* ``MultiplyTest``
+A simple multiplication metric, again of minimal complexity.
+
+* ``Fibonacci``
+Benchmarking a Fibonacci implementation, measuring the computation time for the first N Fibonacci numbers.
+
+
+## Builds
+Builds are managed with love by Github Actions: 
+
+[Build](https://github.com/NewDayTechnology/benchmarking-performance-part-2/actions)
+
+## Further Reading
+
+[Licence](LICENSE)
+
+[Contributing](CONTRIBUTING.md)
+
+[Code of Conduct](CODE_OF_CONDUCT.md)
+
+[Support](SUPPORT.md)
