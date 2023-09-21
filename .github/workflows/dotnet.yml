@@ -3,7 +3,8 @@ name: Build and run benchmarks
 on:
   push:  
   pull_request:
-    
+    branches: [ main ]
+        
 jobs:
   build:
 
